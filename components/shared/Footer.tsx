@@ -2,6 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <footer className="border-t">
       <div className="flex-center wrapper flex-between flex flex-col gap-4 p-5 text-center sm:flex-row">
@@ -11,7 +12,7 @@ const Footer = () => {
           </Link>
         </div>
 
-        <p>2024 EventX. All Rights reserved.</p>
+        <p>{currentYear} EventX. All Rights reserved.</p>
       </div>
     </footer>
   )
